@@ -55,7 +55,8 @@ li span {
   font-size: 4rem;
   padding: 0 .5rem;
 }
-a:link {color: currentColor; 
+ a, a:link, a:hover, a:focus, a:active{
+color: currentColor; 
 cursor: pointer;
 }
 
