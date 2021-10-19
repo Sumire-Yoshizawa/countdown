@@ -37,12 +37,18 @@
           document.getElementById("countdown").style.display = "none";
 
 document.getElementById("content").style.display = "block";
-
-          
-document.getElementById("redirect").innerText = "Redirect after : 10s";
-setTimeout(function(){
+ let seconds = 10
+let countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("redirect").innerText = "Redirect after : " + seconds+"s";
+    if (seconds <= 0) {
+      clearInterval(countdown)
+      
             window.location.href = 'https://ksana.in/hbday';
-         }, 10000);
+    };
+}, 1000);
+          
+
           clearInterval(x);
         }
         //seconds
