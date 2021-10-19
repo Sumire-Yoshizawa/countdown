@@ -63,6 +63,23 @@ li span {
   font-size: 4rem;
   padding: 0 .5rem;
 }
+a:link {color: currentColor; cursor: pointer;}
+
+
+footer{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.footer {
+  height: 100px;
+  margin: auto;
+  width: 200 px;
+  text-align:center;
+  padding: 5px;
+  color : #ffff;
+}
 
 @media all and (max-width: 768px) {
   h1 {
