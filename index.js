@@ -34,13 +34,20 @@
    
         if (distance < 0) {
           document.getElementById("headline").innerText = "Today is Salsabila birthday!";
-          document.getElementById("countdown").style.display = "none";
+document.getElementById("headline").classList.add('animate__animated', 'animate__fadeInDownBig')
+        document.getElementById("countdown").style.display = "none";
 
 document.getElementById("content").style.display = "block";
- let seconds = 10
+let content =document.getElementById("content")
+content.classList.add('animate__animated', 'animate__tada')
+         
+          let seconds = 10
 let countdown = setInterval(function() {
     seconds--;
-    document.getElementById("redirect").innerText = "Redirect after : " + seconds+"s";
+ 
+document.getElementById("redirect").classList.add('animate__animated', 'animate__fadeIn')
+  
+document.getElementById("redirect").innerText = "Redirect after : " + seconds+"s";
     if (seconds <= 0) {
       clearInterval(countdown)
       
@@ -54,3 +61,6 @@ let countdown = setInterval(function() {
         //seconds
       }, 0)
   }());
+
+
+  
