@@ -18,15 +18,7 @@ body {
   align-items: center;
   background-color: #282d33;
   display: flex;
-  font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen-Sans, 
-    Ubuntu, 
-    Cantarell, 
-    "Helvetica Neue", 
-    sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -63,7 +55,9 @@ li span {
   font-size: 4rem;
   padding: 0 .5rem;
 }
-a:link {color: currentColor; cursor: pointer;}
+a:link {color: currentColor; 
+cursor: pointer;
+}
 
 
 footer{
