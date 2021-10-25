@@ -13,6 +13,11 @@ html, body {
   overflow: hidden;
   height: 100%;
   margin: 0;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 body {
@@ -26,7 +31,7 @@ body {
   color: #ffffff;
   margin: 0 auto;
   text-align: center;
-  z-index: 5;
+  z-index: 6;
 }
 
 h1 {
@@ -42,6 +47,12 @@ li {
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
+  transition:  0.4s ease;
+ 
+}
+
+li:hover{
+  transform: scale(1.2);
 }
 
 li span {
@@ -68,6 +79,7 @@ footer{
   bottom: 0;
   position: fixed;
   width: 100%;
+  z-index: 6;
 }
 
 .footer {
@@ -142,16 +154,16 @@ footer{
 }
 
 .twinkling{
-  width:10000px;
+  width: 1000px;
 	height: 100%;
 	background: transparent url("../img/twinkling.png") repeat;
 	background-size: 1000px 1000px;
   background-repeat: no-repeat;
   position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
     
   -moz-animation:move-background 70s linear infinite;
   -ms-animation:move-background 70s linear infinite;
@@ -162,16 +174,14 @@ footer{
 }
 
 .clouds{
+  opacity: 56;
   background-repeat: no-repeat;
-  width:10000px;
+  width: 10000px;
 	height: 100%;
 	background: transparent url("../img/clouds_repeat.png") repeat;
 	background-size: 1000px 1000px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
+  position: fixed;
+  z-index: 6;
 
    -moz-animation:move-background 150s linear infinite;
    -ms-animation:move-background 150s linear infinite;
@@ -179,6 +189,8 @@ footer{
   -webkit-animation:move-background 150s linear infinite;
   animation:move-background 150s linear infinite;
 }
+
+
 
 
 @media all and (max-width: 768px) {
