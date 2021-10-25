@@ -1,0 +1,196 @@
+/* general styling */
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #282d33;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 5;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+ a, a:link, a:hover, a:focus, a:active{
+color: currentColor; 
+cursor: pointer;
+}
+
+
+footer{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.footer {
+  height: 100px;
+  margin: auto;
+  width: 200 px;
+  text-align:center;
+  padding: 5px;
+  color : #ffff;
+}
+
+
+
+
+
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.background-container{
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+  
+}
+
+.stars {
+ background: black url("../img/stars.png") repeat;
+  position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  z-index: 0;
+}
+
+.twinkling{
+  width:10000px;
+	height: 100%;
+	background: transparent url("../img/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+  background-repeat: no-repeat;
+  position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+  -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+	
+}
+
+.clouds{
+  background-repeat: no-repeat;
+  width:10000px;
+	height: 100%;
+	background: transparent url("../img/clouds_repeat.png") repeat;
+	background-size: 1000px 1000px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+   -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
