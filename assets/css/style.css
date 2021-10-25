@@ -143,7 +143,7 @@ footer{
 }
 
 .stars {
- background: black url("../img/stars.png") repeat;
+ background: black url("../img/stars.webp") repeat;
   position: fixed;
 	top: 0;
 	bottom: 0;
@@ -156,7 +156,7 @@ footer{
 .twinkling{
   width: 1000px;
 	height: 100%;
-	background: transparent url("../img/twinkling.png") repeat;
+	background: transparent url("../img/twinkling.webp") repeat;
 	background-size: 1000px 1000px;
   background-repeat: no-repeat;
   position: fixed;
@@ -178,7 +178,7 @@ footer{
   background-repeat: no-repeat;
   width: 10000px;
 	height: 100%;
-	background: transparent url("../img/clouds_repeat.png") repeat;
+	background: transparent url("../img/clouds_repeat.webp") repeat;
 	background-size: 1000px 1000px;
   position: fixed;
   z-index: 6;
